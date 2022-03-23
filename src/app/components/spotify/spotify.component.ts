@@ -18,7 +18,7 @@ export class SpotifyComponent implements OnInit {
   @Input() token:string;
 
   constructor() {
-    this.token = "BQDDL5IQxDCsZpEapaUcJY8y7rp-JwBPq-o0LfVhH_DSc0k55KVRL4ApdZJ_eWfjPwU8vEQ3JwcISMGtjW2OyNOR0nwQYqtPFhmBM9ZwgFCC1oBwJ09_SW4l-AeBBy9LreUMq7RwPQRwcFi6XTVcDDWOWpj4IIkQnPA";
+    this.token = "";
   }
 
   ngOnInit(): void {
@@ -64,7 +64,7 @@ export class SpotifyComponent implements OnInit {
         window.location.replace(redirect);
       }
       /* On stock dans la variable d'instance du composant accueil le Token de connexion */
-      //this.token = accessToken!.toString();
+      this.token = accessToken!.toString();
       console.log("Le token d'accès est : " + this.token);
   }
 
