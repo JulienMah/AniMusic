@@ -86,7 +86,7 @@ export class SpotifyComponent implements OnInit {
       success: function(data) {
         let num_of_tracks = data.tracks.items.length;
         let count = 0;
-        const max_songs = 8;
+        const max_songs = 6;
         while(count < max_songs && count < num_of_tracks){
           let id = data.tracks.items[count].id;
 
